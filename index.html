@@ -4,41 +4,50 @@
     <meta charset="UTF-8" />
     <title>study javascript</title>
     <style>
-      * {
-        border: 2px solid #dedede;
-        padding: 15px;
-        margin: 15px;
-      }
-      html {
-        margin: 0;
-        padding: 0;
+      html,
+      body {
+        height: 100%;
       }
       body {
-        max-width: 600px;
+        text-align: center;
+      }
+
+      .biru-muda {
+        background-color: aqua;
+      }
+      .kotak {
+        width: 50px;
+        height: 50px;
         margin: 30px auto;
-        font-family: sans-serif;
-        color: #333;
+      }
+
+      .Merah {
+        background-color: red;
+      }
+
+      .Hijau {
+        background-color: green;
+      }
+
+      .Biru {
+        background-color: blue;
       }
     </style>
   </head>
   <body>
-    <h1 id="judul">Hello World</h1>
-    <div id="container">
-      <section id="a">
-        <p class="p1">paragraf 1</p>
-        <a href="http://instagram.com/aditiaftrhmn">aditiaftrhmn</a>
-        <p class="p2">paragraf 2</p>
-        <p class="p3">paragraf 3</p>
-      </section>
-      <section id="b">
-        <p>paragraf 4</p>
-        <ul>
-          <li>item 1</li>
-          <li>item 2</li>
-          <li>item 3</li>
-        </ul>
-      </section>
-    </div>
+    <h1>Bermain dengan warna</h1>
+    <button type="button" id="ubahWarna">Ubah warna</button>
+
+    <br /><br />
+
+    <div class="kotak Merah"></div>
+    <input type="range" name="sMerah" min="0" max="255" />
+
+    <div class="kotak Hijau"></div>
+    <input type="range" name="sHijau" min="0" max="255" />
+
+    <div class="kotak Biru"></div>
+    <input type="range" name="sBiru" min="0" max="255" />
 
     <script src="script.js"></script>
   </body>
