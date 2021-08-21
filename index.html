@@ -1,53 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <title>study javascript</title>
-    <style>
-      html,
-      body {
-        height: 100%;
-      }
-      body {
-        text-align: center;
-      }
-
-      .biru-muda {
-        background-color: aqua;
-      }
-      .kotak {
-        width: 50px;
-        height: 50px;
-        margin: 30px auto;
-      }
-
-      .Merah {
-        background-color: red;
-      }
-
-      .Hijau {
-        background-color: green;
-      }
-
-      .Biru {
-        background-color: blue;
-      }
-    </style>
+    <title>DOM Traversal</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <h1>Bermain dengan warna</h1>
-    <button type="button" id="ubahWarna">Ubah warna</button>
-
-    <br /><br />
-
-    <div class="kotak Merah"></div>
-    <input type="range" name="sMerah" min="0" max="255" />
-
-    <div class="kotak Hijau"></div>
-    <input type="range" name="sHijau" min="0" max="255" />
-
-    <div class="kotak Biru"></div>
-    <input type="range" name="sBiru" min="0" max="255" />
+    <div class="container">
+      <div class="card">
+        <img src="Aditia.jpeg" width="96" height="96" />
+        <span class="nama">aditia</span>
+        <span class="telp">08123456789</span>
+        <span class="close">×</span>
+      </div>
+      <div class="card">
+        <img src="gambar1.gif" width="96" height="96" />
+        <span class="nama">faturrohman</span>
+        <span class="telp">08123456789</span>
+        <span class="close">×</span>
+      </div>
+      <div class="card">
+        <img src="gambar2.gif" width="96" height="96" />
+        <span class="nama">ratu</span>
+        <span class="telp">08123456789</span>
+        <span class="close">×</span>
+      </div>
+      <div class="card">
+        <img src="gambar3.gif" width="96" height="96" />
+        <span class="nama">mutia</span>
+        <span class="telp">08123456789</span>
+        <span class="close">×</span>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
