@@ -33,6 +33,10 @@ body {
   border: 3px solid rgb(59, 56, 56);
 }
 
+.card a {
+  text-decoration: none;
+}
+
 .card .nama,
 .card .telp {
   display: block;
