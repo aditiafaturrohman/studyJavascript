@@ -1,38 +1,19 @@
-// const close = document.querySelector(".close");
-// const card = document.querySelector(".card");
-
-// close.addEventListener("click", function () {
-//   card.style.display = "none";
-// });
-
-const close = document.querySelectorAll(".close");
-
-// for (let i = 0; i < close.length; i++) {
-//   close[i].addEventListener("click", function (e) {
-//     // close[i].parentElement.style.display = "none";
-//     e.target.parentElement.style.display = "none";
-//   });
-// }
-
-// close.forEach(function (el) {
-//   el.addEventListener("click", function (e) {
-//     e.target.parentElement.style.display = "none";
-//     e.preventDefault();
-//     e.stopPropagation();
-//   });
-// });
-
-// const cards = document.querySelectorAll(".card");
-// cards.forEach(function (card) {
-//   card.addEventListener("click", function () {
-//     alert("oke");
-//   });
-// });
-
 const container = document.querySelector(".container");
+const jumbo = document.querySelector(".jumbo");
+const thumb = document.querySelectorAll(".thumb");
 
 container.addEventListener("click", function (e) {
-  if (e.target.className == "close") {
-    e.target.parentElement.style.display = "none";
+  //cek apakah yang di klik thumb
+  if (e.target.className == "thumb") {
+    jumbo.src = e.target.src;
+    jumbo.classList.add("fade");
+    setTimeout(() => {
+      jumbo.classList.remove("fade");
+    }, 500);
+
+    thumb.forEach((thumb) => {
+      thumb.className = "thumb";
+    });
+    e.target.classList.add("active");
   }
 });

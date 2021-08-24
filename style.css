@@ -1,72 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
 body {
-  margin: 50px;
-  font-family: arial;
-  background-color: #666;
-}
-
-.container {
-  width: 900px;
-  margin: auto;
-}
-
-.card {
-  display: inline-block;
-  width: 220px;
-  padding: 0 80px;
-  height: 86px;
-  font-size: 16px;
-  line-height: 80px;
-  border-radius: 50px;
-  background-color: #f1f1f1;
-  margin: 20px;
-  position: relative;
+  background-color: #ccc;
   text-align: center;
 }
 
-.card img {
+.container {
+  width: 600px;
+  margin: auto;
+  border: 4px solid white;
+  margin: 10px auto;
+  overflow: hidden;
+}
+
+.thumb {
+  width: 200px;
   float: left;
-  margin: 0 10px 0 -80px;
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
-  position: relative;
-  border: 3px solid rgb(59, 56, 56);
+  border: 2px solid white;
+  box-sizing: border-box;
 }
 
-.card a {
-  text-decoration: none;
-}
-
-.card .nama,
-.card .telp {
-  display: block;
-  line-height: 20px;
-  padding: 0 5px;
-}
-
-.card .nama {
-  margin-left: 20px;
-  margin-top: 20px;
-  font-size: 20px;
-}
-
-.card .telp {
-  margin-left: 20px;
-  margin-top: 5px;
-  font-size: 16px;
-  color: #aaa;
-}
-
-.card .close {
-  font-size: 24px;
-  font-weight: bold;
-  color: #999;
-  position: absolute;
-  top: 0;
-  right: 30px;
+.thumb:hover {
+  opacity: 0.5;
   cursor: pointer;
 }
 
-.card:hover .close {
-  color: red;
+@keyframes fadein {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade {
+  opacity: 0;
+  animation: fadein 0.4s forwards;
+}
+
+.active {
+  opacity: 0.5;
 }
