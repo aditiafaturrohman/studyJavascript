@@ -1,19 +1,24 @@
-const container = document.querySelector(".container");
-const jumbo = document.querySelector(".jumbo");
-const thumb = document.querySelectorAll(".thumb");
+const angka = [-1, 8, 9, 1, 4, -5, -4, 3, 2, 9];
 
-container.addEventListener("click", function (e) {
-  //cek apakah yang di klik thumb
-  if (e.target.className == "thumb") {
-    jumbo.src = e.target.src;
-    jumbo.classList.add("fade");
-    setTimeout(() => {
-      jumbo.classList.remove("fade");
-    }, 500);
+// mencari angka >= 3
+// const newAngka = [];
+// for (let i = 0; i <= angka.length; i++) {
+//   if (angka[i] >= 3) {
+//     newAngka.push(angka[i]);
+//   }
+// }
 
-    thumb.forEach((thumb) => {
-      thumb.className = "thumb";
-    });
-    e.target.classList.add("active");
-  }
-});
+// console.info(newAngka);
+
+// const newAngka = angka.filter((a) => a >= 3);
+
+// const newAngka = angka.map((a) => a * 2);
+
+// const newAngka = angka.reduce((accumulator, currentValue) => accumulator + currentValue);
+
+const hasil = angka
+  .filter((a) => a > 5)
+  .map((a) => a * 3)
+  .reduce((acc, cur) => acc + cur);
+
+console.info(hasil);
