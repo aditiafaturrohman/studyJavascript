@@ -1,5 +1,5 @@
 const mhs1 = {
-  nama: "aditia faturrohman",
+  nama: "aditia ",
   umur: 17,
   jurusan: "TKJ",
   alamat: { desa: "ciakar", kecamatan: "panongan", kota: "tanggerang", provinsi: "banten" },
