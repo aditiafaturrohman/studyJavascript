@@ -1,12 +1,21 @@
-const mhs1 = {
-  nama: "aditia ",
-  umur: 17,
-  jurusan: "TKJ",
-  alamat: { desa: "ciakar", kecamatan: "panongan", kota: "tanggerang", provinsi: "banten" },
-};
+// // const mhs = ["aditia", "mutia", "danu"];
 
-function mhs({ nama, umur, jurusan, alamat: { desa, kecamatan, kota, provinsi } }) {
-  return `nama saya ${nama}, umur saya ${umur}, saya dari fakultas ${jurusan}, asal saya dari ${kota}`;
-}
+// // for (const [i, s] of mhs.entries()) {
+// //   console.info(`hallo nama saya ${s}, saya dari angkatan ${i + 1}`);
+// // }
 
-console.info(mhs(mhs1));
+// const mhs = document.querySelectorAll(".name");
+
+// for (const data of mhs) {
+//   console.info(data.textContent);
+// }
+
+// function sum() {
+//   let a = 0;
+//   for (plus of arguments) {
+//     a += plus;
+//   }
+//   return console.info(a);
+// }
+
+// sum(2, 3, 2, 4, 5);
