@@ -1,21 +1,5 @@
-// // const mhs = ["aditia", "mutia", "danu"];
+function filtering(type, ...values) {
+  return values.filter((v) => typeof v === type);
+}
 
-// // for (const [i, s] of mhs.entries()) {
-// //   console.info(`hallo nama saya ${s}, saya dari angkatan ${i + 1}`);
-// // }
-
-// const mhs = document.querySelectorAll(".name");
-
-// for (const data of mhs) {
-//   console.info(data.textContent);
-// }
-
-// function sum() {
-//   let a = 0;
-//   for (plus of arguments) {
-//     a += plus;
-//   }
-//   return console.info(a);
-// }
-
-// sum(2, 3, 2, 4, 5);
+console.info(filtering("boolean", 1, 2, false, 4, 5, "aditia", true, 4, 7, "mutia", "danu"));
